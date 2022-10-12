@@ -1,3 +1,5 @@
+#!pip install scikit-learn==1.0.2
+
 import os
 import numpy as np
 import pandas as pd
@@ -20,7 +22,7 @@ X_test = sc.transform(X_test)
 
 from sklearn.neighbors import KNeighborsClassifier
 # minkowski is for euclidian distance
-classifier = KNeighborsClassifier(n_neighbors = 5, metric = 'minkowski', p = 2)
+classifier = KNeighborsClassifier(n_neighbors = 5, metric = "minkowski", p = 2)
 
 # Model training
 classifier.fit(X_train, y_train)
